@@ -3,7 +3,6 @@
 // Solution to Question 1
 
 document.querySelector(".team-title").style.color = "#f3b72a";
-// document.querySelector(".member-title").style.color = "#f3b72a";
 document.querySelector(".background-header").style.background = "#f8f1e1";
 document.querySelector(".background-body").style.background = "#fcfcfc";
 
