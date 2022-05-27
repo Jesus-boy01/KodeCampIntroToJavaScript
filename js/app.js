@@ -98,13 +98,13 @@ console.log(`The Simple Interest obtained is #${simpleInterest}.${remaining}K`);
 const result = 10 % 4;
 console.log("The remainder of the division of 10 & 4 is", result);
 
-// Solution to Question 11
+// Solution to Question 11 (first version)
 
-const meritMass = 85;
-const meritHeight = 1.76;
+const meritMass = 78;
+const meritHeight = 1.69;
 
-const nutJobMass = 95;
-const nutJobHeight = 1.88;
+const nutJobMass = 92;
+const nutJobHeight = 1.95;
 
 const meritHigherBmi= "Merit has a higher BMI";
 
@@ -112,3 +112,15 @@ const meritBmi = meritMass / (meritHeight ** 2);
 const nutJobBmi = nutJobMass / (nutJobHeight ** 2);
 
 console.log((meritBmi > nutJobBmi) ? meritHigherBmi : "NutJob has a higher BMI");
+
+// Solution to Question 11 (second version)
+
+function calculateBMI(mass, height) {
+    const BMI = mass / (height ** 2);
+    return BMI;
+}
+
+const meritBMI = calculateBMI(85, 1.76);
+const nutJobBMI = calculateBMI(95, 1.88);
+
+console.log((meritBMI > nutJobBMI) ? meritHigherBmi : "NutJob has a higher BMI");
