@@ -119,13 +119,13 @@ const meritHeight = 1.69;
 const nutJobMass = 92;
 const nutJobHeight = 1.95;
 
-const meritHigherBmi= "Merit has a higher BMI";
+let meritHigherBmi;
 
 const meritBmi = (meritMass / (meritHeight ** 2)).toFixed(3);
 const nutJobBmi = (nutJobMass / (nutJobHeight ** 2)).toFixed(3);
 
-console.log((meritBmi > nutJobBmi) ? meritHigherBmi +
- ` which is ${meritBmi}` : `NutJob has a higher BMI which is ${nutJobBmi}`);
+meritHigherBmi = meritBmi > nutJobBmi;
+console.log(meritHigherBmi);
 
  console.log("Question 11b");
 // Solution to Question 11 (second version)
@@ -138,5 +138,7 @@ function calculateBMI(mass, height) {
 const meritBMI = (calculateBMI(95, 1.88)).toFixed(3);
 const nutJobBMI = (calculateBMI(85, 1.76)).toFixed(3);
 
-console.log((meritBMI > nutJobBMI) ? meritHigherBmi +
- ` which is ${meritBMI}` : `NutJob has a higher BMI which is ${nutJobBMI}`);
+let meritHigherBMI;
+
+meritHigherBMI = meritBMI > nutJobBMI;
+console.log(meritHigherBMI);
