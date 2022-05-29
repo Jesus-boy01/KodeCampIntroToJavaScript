@@ -1,0 +1,66 @@
+/*---- Deafault settings ----*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 50%;
+    margin: 7em auto 0;
+    background-color: #e6ce96;
+}
+
+/*---- team-info section ----*/
+
+.team {
+    padding: 40px 25px;
+}
+
+.team-content {
+    width: 65%;
+}
+
+.team-image {
+    width: 35%;
+}
+
+.team-content {
+    margin-right: 40px;
+}
+
+.team-content-head {
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.team-content-head h3 {
+    color: rgb(134, 112, 112);
+}
+
+.team-members {
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.member {
+    width: 48%;
+    font-size: 20px;
+    color: rgb(134, 112, 112);
+    background-color: #fff;
+    padding: 4px;
+    margin: 5px 2px 0;
+    cursor: pointer;
+}
+
+.member:hover {
+    background-color: #f3b72a;
+    color: #fff;
+}
+
+.team-image {
+    background: url("../img/zeus-img.jpg") no-repeat;
+    height: auto;
+    color: rgb(223, 185, 18);
+}

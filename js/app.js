@@ -2,18 +2,21 @@
 
 // Solution to Question 1
 
-document.querySelector(".team-title").style.color = "#f3b72a";
-document.querySelector(".background-header").style.background = "#f8f1e1";
-document.querySelector(".background-body").style.background = "#fcfcfc";
+document.querySelector("#team-info-section").style.background = "#f8f1e1";
+document.querySelector("#team-info-section").style.borderRadius = "20px";
+document.querySelector(".team").style.display = "flex";
+document.querySelector(".team").style.justifyContent = "center";
+document.querySelector("#content-head").style.textAlign = "center";
+document.getElementById("team-head").style.color = "#f3b72a";
+document.getElementById("title").style.textAlign = "center";
+document.getElementById("title").style.fontSize = "19px";
+document.getElementById("title").style.color = "#f3b72a";
+document.querySelector(".team-members").style.display = "flex";
 
 // Solution to Question 2
 
-const teamMembers = ["Simple_Soul", "TJ", "OreSause", "Luchii",, "Khalid", "Tolu", "Etinosa", "MavDavis", "HayJ"];
-for (const myName of teamMembers) {
-    if (myName === "Tolu") {
-        console.log(myName);   
-    }
-}
+const teamMembers = ["Simple_Soul", "TJ", "OreSause", "Luchii", "Khalid", "Tolu", "Etinosa", "MavDavis", "HayJ"];
+console.log(teamMembers[5]);
 
 // Solution to Question 3 
 
@@ -44,11 +47,10 @@ console.log("I can " + hobby + " moderately " + speed);
 // Solution to Question 5
 
 function remainder(num1, num2) {
-    let remain = num1 % num2;
-    return (num1 % num2 !== 0) ? remain : 0;
+    return ((num1 % num2));
 }
 
-console.log("The remainder is", remainder(9, 5));
+console.log("The remainder is", remainder(5, 5));
 
 // Solution to Question 6
 
@@ -60,7 +62,7 @@ function quadraticSolution(a, b, c) {
     return (firstValue === secondValue) ? firstValue + " twice" : [firstValue, secondValue];
 }
 
-console.log("The solution of the quadratic equation is", quadraticSolution(1, 5, 6));
+console.log("The solution of the quadratic equation is", quadraticSolution(1, -6, 8));
 
 // Solution to Question 7 
 
@@ -77,8 +79,8 @@ console.log(wordBlanks);
 
 function areaOfCircle(radius) {
     const PI = 3.142;
-    const area = PI * (radius ** 2);
-    return area;
+    const circleArea = PI * (radius ** 2);
+    return circleArea;
 }
 
 console.log("The area of the circle of radius 9 is", (areaOfCircle(9)).toFixed(2));
@@ -108,10 +110,11 @@ const nutJobHeight = 1.95;
 
 const meritHigherBmi= "Merit has a higher BMI";
 
-const meritBmi = meritMass / (meritHeight ** 2);
-const nutJobBmi = nutJobMass / (nutJobHeight ** 2);
+const meritBmi = (meritMass / (meritHeight ** 2)).toFixed(3);
+const nutJobBmi = (nutJobMass / (nutJobHeight ** 2)).toFixed(3);
 
-console.log((meritBmi > nutJobBmi) ? meritHigherBmi : "NutJob has a higher BMI");
+console.log((meritBmi > nutJobBmi) ? meritHigherBmi +
+ ` which is ${meritBmi}` : `NutJob has a higher BMI which is ${nutJobBmi}`);
 
 // Solution to Question 11 (second version)
 
@@ -120,7 +123,8 @@ function calculateBMI(mass, height) {
     return BMI;
 }
 
-const meritBMI = calculateBMI(85, 1.76);
-const nutJobBMI = calculateBMI(95, 1.88);
+const meritBMI = (calculateBMI(95, 1.88)).toFixed(3);
+const nutJobBMI = (calculateBMI(85, 1.76)).toFixed(3);
 
-console.log((meritBMI > nutJobBMI) ? meritHigherBmi : "NutJob has a higher BMI");
+console.log((meritBMI > nutJobBMI) ? meritHigherBmi +
+ ` which is ${meritBMI}` : `NutJob has a higher BMI which is ${nutJobBMI}`);
