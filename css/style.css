@@ -38,6 +38,10 @@ body {
     color: rgb(134, 112, 112);
 }
 
+.title {
+    font-size: 19px;
+}
+
 .team-members {
     flex-wrap: wrap;
     text-align: center;
@@ -63,4 +67,70 @@ body {
     background: url("../img/zeus-img.jpg") no-repeat;
     height: auto;
     color: rgb(223, 185, 18);
+}
+
+/*---- media queries ----*/
+
+@media (max-width: 1025px) {
+    .team {
+        padding: 20px 10px;
+    }
+
+    .team-content {
+        margin-right: 20px;
+    }
+
+    .team-content-head {
+        font-size: 19px;
+    }
+
+    .title {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 769px) {
+
+    body {
+        width: 60%;
+    }
+
+    .team {
+        flex-direction: column;
+    }
+
+    .team-content {
+        width: 100%;
+        order: 2;
+    }
+    
+    .team-image {
+        width: 100%;
+        order: 1;
+        height: 40vh;
+        background-position: center;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 426px) {
+    body {
+        width: 70%;
+    }
+
+    .member {
+        width: 48%;
+    }
+}
+
+@media (max-width: 376px) {
+    body {
+        width: 80%;
+    }
+}
+
+@media (max-width: 321px) {
+    body {
+        width: 90%;
+    }
 }

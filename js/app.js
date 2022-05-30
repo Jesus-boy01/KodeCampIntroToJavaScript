@@ -9,7 +9,6 @@ document.querySelector(".team").style.justifyContent = "center";
 document.querySelector("#content-head").style.textAlign = "center";
 document.getElementById("team-head").style.color = "#f3b72a";
 document.getElementById("title").style.textAlign = "center";
-document.getElementById("title").style.fontSize = "19px";
 document.getElementById("title").style.color = "#f3b72a";
 document.querySelector(".team-members").style.display = "flex";
 
