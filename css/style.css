@@ -7,7 +7,7 @@
 
 body {
     width: 50%;
-    margin: 7em auto 5em;
+    margin: 7em auto;
     background-color: #e6ce96;
 }
 
@@ -132,5 +132,17 @@ body {
 @media (max-width: 321px) {
     body {
         width: 90%;
+    }
+
+    #content-head {
+        font-size: 20px;
+    }
+
+    #title {
+        font-size: 19px;
+    }
+
+    .member p {
+        font-size: 18px;
     }
 }
